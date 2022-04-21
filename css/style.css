@@ -1,0 +1,180 @@
+/* setting */
+@import "reset.css";
+@import "10000hours.css";
+
+:root {
+  --color-main: #5b2386;
+  --color-point: #fcee21;
+  --color-sub: #f5df4d;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.txt-bold {
+  font-family: "GmarketSansBold", sans-serif;
+}
+
+.txt-ir {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 1px;
+  color: transparent;
+}
+
+.btn {
+  padding: 21px 49px;
+  border-radius: 50px;
+  font-size: 24px;
+  color: var(--color-main);
+  font-family: "GmarketSansBold", sans-serif;
+  box-shadow: 0px 0px 10px 0px #00000080;
+  background-color: #fff;
+}
+
+/* design */
+
+body {
+  background-color: var(--color-main);
+  color: #ffffff;
+}
+
+.header {
+  margin: 7.5rem auto 3rem;
+  text-align: center;
+  background-image: url("../img/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 img {
+  width: 564px;
+  padding: 4.8rem 0;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.txt-mot {
+  margin-bottom: 78px;
+  font-family: "OTEnjoystoriesBA", cursive;
+  font-size: 2.25rem;
+  color: var(--color-sub);
+}
+
+.txt-description {
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 102px;
+}
+
+.txt-description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -58px;
+  width: 493px;
+  height: 96px;
+  background: url("../img/quotes.png") no-repeat;
+}
+
+.txt-description strong {
+  font-size: 1.5rem;
+}
+
+.form-input {
+  margin-bottom: 147px;
+}
+
+.form-input fieldset {
+  line-height: 90px;
+}
+
+.form-input fieldset + fieldset {
+  margin-bottom: 100px;
+}
+
+.inp-field,
+.inp-time {
+  padding: 16px;
+  width: 228px;
+  border: 0;
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.inp-field::placeholder,
+.inp-time::placeholder {
+  color: #babcbe;
+}
+
+.btn-submit {
+  width: fit-content;
+  background-color: var(--color-point);
+}
+
+.btn-submit + img {
+  position: relative;
+  top: 45px;
+}
+
+.cont-result {
+  margin-bottom: 130px;
+}
+
+.txt-result {
+  margin-bottom: 17px;
+}
+
+.txt-result + .txt-result {
+  margin-bottom: 130px;
+}
+
+.txt-result strong {
+  font-family: "GmarketSansBold", sans-serif;
+  font-size: 72px;
+  vertical-align: middle;
+}
+
+.btn-practice {
+  background-color: var(--color-point);
+  margin-right: 18px;
+}
+
+.footer {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.footer img:first-of-type {
+  margin-bottom: 20px;
+}
+
+.footer .txt-caution {
+  font-size: 0.8rem;
+  line-height: 17px;
+}

@@ -4,59 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>1만 시간의 법칙</title>
   </head>
   <body>
     <header class="header">
-      <h1><img src="title.svg" alt="1만 시간의 법칙" /></h1>
+      <h1><img src="../img/title.svg" alt="1만 시간의 법칙" /></h1>
     </header>
     <main>
       <article>
         <p class="txt-mot">“연습은 어제의 당신보다 당신을 더 낫게 만든다.”</p>
         <p class="txt-description">
-          1만 시간의 법칙은 어떤 분야의 전문가가 되기 위해서는 최소한 1만 시간의
-          훈련이 필요하다는 법칙이다.
+          <strong class="txt-bold">1만 시간의 법칙</strong>은<br />
+          어떤 분야의 전문가가 되기 위해서는<br />
+          최소한 1만 시간의 훈련이 필요하다는 법칙이다.
         </p>
         <form class="form-input" action="">
+          <h2 class="txt-ir">1만 시간의 법칙 계산하기</h2>
           <fieldset>
-            <legend>전문가가 되고싶은 분야</legend>
+            <legend class="txt-ir">전문가가 되고싶은 분야</legend>
             나는
-            <input type="text" class="inp-field" id="field" />
+            <input
+              type="text"
+              class="inp-field"
+              id="field"
+              placeholder="예)프로그래밍"
+            />
             전문가가 될 것이다.
           </fieldset>
           <fieldset>
-            <legend>매일 공부할 시간</legend>
+            <legend class="txt-ir">매일 공부할 시간</legend>
             그래서 앞으로 매일 하루에
-            <input type="text" class="inp-time" id="time" />
+            <input
+              type="number"
+              class="inp-time"
+              id="time"
+              placeholder="예)5시간"
+            />
             시간씩 훈련할 것이다.
           </fieldset>
-          <button type="submit" class="btn-submit">
+          <button type="submit" class="btn btn-submit">
             나는 며칠 동안 훈련을 해야 1만 시간이 될까?
           </button>
+          <img src="../img/click.png" alt />
         </form>
         <div class="cont-result">
+          <h2 class="txt-ir">계산 결과</h2>
           <p class="txt-result">
             당신은
-            <span class="txt-field">프로그래밍</span>
+            <strong class="txt-field">프로그래밍</strong>
             전문가가 되기 위해서
           </p>
           <p class="txt-result">
             대략
-            <span class="num-day">5110</span>
+            <strong class="num-day">5110</strong>
             일 이상 훈련하셔야 합니다! :)
           </p>
-          <a href="" class="btn-practice">훈련하러 가기 GO!GO!</a>
-          <a href="" class="btn-share">공유하기</a>
+          <a href="" class="btn btn-practice">훈련하러 가기 GO!GO!</a>
+          <a href="" class="btn btn-share">공유하기</a>
         </div>
       </article>
     </main>
     <footer class="footer">
-      <img src="위니브.svg" alt="위니브" />
+      <img src="img/logo.svg" alt="위니브" />
       <p class="txt-caution">
-        ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
+        ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br />
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
       </p>
     </footer>
+    <script>
+      window.MSInputMethodContext &&
+        document.documentMode &&
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>',
+        );
+    </script>
+    <script src="js/10000hours.js"></script>
   </body>
 </html>
