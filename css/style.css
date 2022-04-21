@@ -120,16 +120,19 @@ main article {
 .inp-time {
   padding: 16px;
   width: 228px;
-  border: 0;
   font-family: "GmarketSansMedium", sans-serif;
-  font-size: 1.5rem;
-  border-radius: 7px;
+  border: 0;
+  border-radius: 10px;
   text-align: center;
+  font-size: 24px;
+  line-height: 25px;
 }
 
 .inp-field::placeholder,
 .inp-time::placeholder {
   color: #babcbe;
+  font-size: 24px;
+  line-height: 25px;
 }
 
 .btn-submit {
