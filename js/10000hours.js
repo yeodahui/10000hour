@@ -1,7 +1,3 @@
-// input #field, #time 가져오기
-// button #submit 이벤트리스너
-// 계산해서 strong #resultField, #resultDay에 값 넣기
-// #goPractice에 이벤트리스너 -> 모달
 const btnSubmit = document.querySelector("#submit");
 const resultField = document.querySelector("#resultField");
 const resultDay = document.querySelector("#resultDay");
@@ -15,7 +11,7 @@ if (btnSubmit) {
     const field = document.querySelector("#field").value;
     const time = document.querySelector("#time").value;
 
-    if (time > 24) {
+    if (parseInt(time) > 24) {
       alert("하루에 24시간 이상 훈련할 순 없어요!");
       return;
     }
@@ -28,10 +24,23 @@ if (btnSubmit) {
 }
 
 // 훈련하러 가기 버튼, 모달창 띄우기
+if (btnPractice) {
+  btnPractice.addEventListener("click", event => {
+    event.preventDefault();
+    const modal = document.querySelector("#bgModal");
+    const btnModalClose = document.querySelector("#btnModalClose");
+
+    modal.style.display = "flex";
+    btnModalClose.addEventListener("click", event => {
+      event.preventDefault();
+      modal.style.display = "none";
+    });
+  });
+}
 
 // 공유하기
 if (btnshare) {
-  btnshare.addEventListener("click", () => {
+  btnshare.addEventListener("click", event => {
     const tempCont = document.querySelector("#url");
     tempCont.value = document.location.href;
 
