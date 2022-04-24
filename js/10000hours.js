@@ -3,7 +3,7 @@ const resultContainer = document.querySelector("#resultContainer");
 const resultField = document.querySelector("#resultField");
 const resultDay = document.querySelector("#resultDay");
 const btnPractice = document.querySelector("#goPractice");
-const btnshare = document.querySelector("#share");
+const btnShare = document.querySelector("#share");
 
 // 시간 계산하기
 if (btnSubmit) {
@@ -42,8 +42,8 @@ if (btnPractice) {
 }
 
 // 공유하기
-if (btnshare) {
-  btnshare.addEventListener("click", event => {
+if (btnShare) {
+  btnShare.addEventListener("click", event => {
     const tempCont = document.querySelector("#url");
     tempCont.value = document.location.href;
 
@@ -51,6 +51,7 @@ if (btnshare) {
     tempCont.select();
 
     // execCommand가 더이상 지원되지 않음.
+    // clipboard.js 이용해야 할 듯
     document.execCommand("copy");
 
     alert("현재 URL이 클립보드에 복사 되었습니다.");
