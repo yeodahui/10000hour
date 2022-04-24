@@ -47,6 +47,11 @@ body {
   color: #ffffff;
 }
 
+body::before {
+  content: " ";
+  display: table;
+}
+
 .header {
   margin: 7.5rem auto 3rem;
   text-align: center;
@@ -180,4 +185,51 @@ main article {
 .footer .txt-caution {
   font-size: 0.8rem;
   line-height: 17px;
+}
+
+/* modal */
+.bg-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.modal-cheer {
+  position: absolute;
+  /* margin: 0 auto; */
+  text-align: center;
+  padding: 76px 0 68px;
+  width: 800px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px #00000080;
+}
+
+.modal-cheer h3,
+.modal-cheer h3 + p {
+  font-family: "OTEnjoystoriesBA", cursive;
+  color: var(--color-main);
+}
+
+.modal-cheer h3 {
+  font-size: 96px;
+}
+
+.modal-cheer h3 + p {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.modal-cheer .licat {
+  margin-bottom: 74px;
+}
+
+.btn-modal-close {
+  background-color: var(--color-point);
 }
