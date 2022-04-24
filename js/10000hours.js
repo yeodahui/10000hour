@@ -1,4 +1,5 @@
 const btnSubmit = document.querySelector("#submit");
+const resultContainer = document.querySelector("#resultContainer");
 const resultField = document.querySelector("#resultField");
 const resultDay = document.querySelector("#resultDay");
 const btnPractice = document.querySelector("#goPractice");
@@ -20,6 +21,8 @@ if (btnSubmit) {
 
     resultField.innerHTML = field;
     resultDay.innerHTML = day;
+
+    resultContainer.style.display = "block";
   });
 }
 
