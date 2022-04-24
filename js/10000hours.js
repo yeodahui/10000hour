@@ -10,9 +10,12 @@ if (btnSubmit) {
   btnSubmit.addEventListener("click", event => {
     event.preventDefault();
     const field = document.querySelector("#field").value;
-    const time = document.querySelector("#time").value;
+    const time = parseInt(document.querySelector("#time").value);
 
-    if (parseInt(time) > 24) {
+    if (isNaN(time)) {
+      alert("올바른 시간을 입력해 주세요!");
+      return;
+    } else if (parseInt(time) > 24) {
       alert("하루에 24시간 이상 훈련할 순 없어요!");
       return;
     }
